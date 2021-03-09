@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A526020A25DB1E4B00A219D3 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526020925DB1E4B00A219D3 /* DashboardView.swift */; };
+		A526021025DB31B300A219D3 /* GlowPeripheralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526020F25DB31B300A219D3 /* GlowPeripheralService.swift */; };
+		A526021325DB31C800A219D3 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526021225DB31C800A219D3 /* Data+Hex.swift */; };
+		A526021625DB33B500A219D3 /* GlowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526021525DB33B500A219D3 /* GlowData.swift */; };
+		A526022225DB7CF800A219D3 /* GlowStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526022125DB7CF800A219D3 /* GlowStore.swift */; };
+		A526022B25DB8AE100A219D3 /* GlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526022A25DB8AE100A219D3 /* GlowCoordinator.swift */; };
+		A526022F25DB8E7000A219D3 /* Binding+OnChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526022E25DB8E7000A219D3 /* Binding+OnChange.swift */; };
+		A526023225E0B74700A219D3 /* GlowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526023125E0B74700A219D3 /* GlowError.swift */; };
+		A526023D25E1D02C00A219D3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A526023C25E1D02C00A219D3 /* Intents.intentdefinition */; };
+		A526024825E1D21B00A219D3 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A526024725E1D21B00A219D3 /* Intents.framework */; };
+		A526024B25E1D21B00A219D3 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526024A25E1D21B00A219D3 /* IntentHandler.swift */; };
+		A526024F25E1D21B00A219D3 /* Intent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A526024525E1D21B00A219D3 /* Intent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A526025C25EAE51900A219D3 /* Intents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = A526023C25E1D02C00A219D3 /* Intents.intentdefinition */; };
+		A526026225EAE56200A219D3 /* ToggleLightIntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526026125EAE56200A219D3 /* ToggleLightIntentHandler.swift */; };
+		A526026625EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526026525EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift */; };
+		A526026A25EAE6BF00A219D3 /* GlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526022A25DB8AE100A219D3 /* GlowCoordinator.swift */; };
+		A526026F25EAE91700A219D3 /* GlowPeripheralService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526020F25DB31B300A219D3 /* GlowPeripheralService.swift */; };
+		A526027225EAE91900A219D3 /* GlowPeripheralServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526026525EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift */; };
+		A526027525EAE92200A219D3 /* GlowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526021525DB33B500A219D3 /* GlowData.swift */; };
+		A526027825EAE92500A219D3 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5467DDD25C8C38E0060055B /* BLEManager.swift */; };
+		A526027B25EAE92D00A219D3 /* GlowStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526022125DB7CF800A219D3 /* GlowStore.swift */; };
+		A526028025EAE95600A219D3 /* GlowError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526023125E0B74700A219D3 /* GlowError.swift */; };
+		A526028525EB228E00A219D3 /* Data+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A526021225DB31C800A219D3 /* Data+Hex.swift */; };
+		A5467DCE25C8C34D0060055B /* CasperGlowProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5467DCD25C8C34D0060055B /* CasperGlowProApp.swift */; };
+		A5467DD225C8C34E0060055B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5467DD125C8C34E0060055B /* Assets.xcassets */; };
+		A5467DD525C8C34E0060055B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5467DD425C8C34E0060055B /* Preview Assets.xcassets */; };
+		A5467DDE25C8C38E0060055B /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5467DDD25C8C38E0060055B /* BLEManager.swift */; };
+		A5655F2A25F19F28004EBC87 /* GlowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5655F2925F19F28004EBC87 /* GlowLogger.swift */; };
+		A5655F2F25F1A013004EBC87 /* GlowLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5655F2925F19F28004EBC87 /* GlowLogger.swift */; };
+		A5BDD7C325F6EFF700022822 /* GlowCharacteristicUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDD7C225F6EFF700022822 /* GlowCharacteristicUUID.swift */; };
+		A5BDD7C425F6EFF700022822 /* GlowCharacteristicUUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDD7C225F6EFF700022822 /* GlowCharacteristicUUID.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A526024D25E1D21B00A219D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5467DC225C8C34D0060055B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A526024425E1D21B00A219D3;
+			remoteInfo = Intent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A526025325E1D21B00A219D3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A526024F25E1D21B00A219D3 /* Intent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A526020925DB1E4B00A219D3 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		A526020F25DB31B300A219D3 /* GlowPeripheralService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowPeripheralService.swift; sourceTree = "<group>"; };
+		A526021225DB31C800A219D3 /* Data+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Hex.swift"; sourceTree = "<group>"; };
+		A526021525DB33B500A219D3 /* GlowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowData.swift; sourceTree = "<group>"; };
+		A526022125DB7CF800A219D3 /* GlowStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowStore.swift; sourceTree = "<group>"; };
+		A526022A25DB8AE100A219D3 /* GlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowCoordinator.swift; sourceTree = "<group>"; };
+		A526022E25DB8E7000A219D3 /* Binding+OnChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+OnChange.swift"; sourceTree = "<group>"; };
+		A526023125E0B74700A219D3 /* GlowError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowError.swift; sourceTree = "<group>"; };
+		A526023C25E1D02C00A219D3 /* Intents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Intents.intentdefinition; sourceTree = "<group>"; };
+		A526024525E1D21B00A219D3 /* Intent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A526024725E1D21B00A219D3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		A526024A25E1D21B00A219D3 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		A526024C25E1D21B00A219D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A526026125EAE56200A219D3 /* ToggleLightIntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleLightIntentHandler.swift; sourceTree = "<group>"; };
+		A526026525EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowPeripheralServiceDelegate.swift; sourceTree = "<group>"; };
+		A5467DCA25C8C34D0060055B /* CasperGlowPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CasperGlowPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5467DCD25C8C34D0060055B /* CasperGlowProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasperGlowProApp.swift; sourceTree = "<group>"; };
+		A5467DD125C8C34E0060055B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5467DD425C8C34E0060055B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A5467DD625C8C34E0060055B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5467DDD25C8C38E0060055B /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		A5655F2925F19F28004EBC87 /* GlowLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowLogger.swift; sourceTree = "<group>"; };
+		A5BDD7C225F6EFF700022822 /* GlowCharacteristicUUID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlowCharacteristicUUID.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A526024225E1D21B00A219D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A526024825E1D21B00A219D3 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5467DC725C8C34D0060055B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A526022425DB7F9C00A219D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A526020925DB1E4B00A219D3 /* DashboardView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A526024625E1D21B00A219D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A526024725E1D21B00A219D3 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A526024925E1D21B00A219D3 /* Intent */ = {
+			isa = PBXGroup;
+			children = (
+				A526024A25E1D21B00A219D3 /* IntentHandler.swift */,
+				A526026125EAE56200A219D3 /* ToggleLightIntentHandler.swift */,
+				A526024C25E1D21B00A219D3 /* Info.plist */,
+			);
+			path = Intent;
+			sourceTree = "<group>";
+		};
+		A526026925EAE68900A219D3 /* HelperExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				A526021225DB31C800A219D3 /* Data+Hex.swift */,
+				A526022E25DB8E7000A219D3 /* Binding+OnChange.swift */,
+			);
+			path = HelperExtensions;
+			sourceTree = "<group>";
+		};
+		A5467DC125C8C34D0060055B = {
+			isa = PBXGroup;
+			children = (
+				A5467DCC25C8C34D0060055B /* CasperGlowPro */,
+				A526024925E1D21B00A219D3 /* Intent */,
+				A526024625E1D21B00A219D3 /* Frameworks */,
+				A5467DCB25C8C34D0060055B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5467DCB25C8C34D0060055B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5467DCA25C8C34D0060055B /* CasperGlowPro.app */,
+				A526024525E1D21B00A219D3 /* Intent.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5467DCC25C8C34D0060055B /* CasperGlowPro */ = {
+			isa = PBXGroup;
+			children = (
+				A526026925EAE68900A219D3 /* HelperExtensions */,
+				A526022425DB7F9C00A219D3 /* Views */,
+				A5655F2925F19F28004EBC87 /* GlowLogger.swift */,
+				A5467DCD25C8C34D0060055B /* CasperGlowProApp.swift */,
+				A526022125DB7CF800A219D3 /* GlowStore.swift */,
+				A526022A25DB8AE100A219D3 /* GlowCoordinator.swift */,
+				A526023125E0B74700A219D3 /* GlowError.swift */,
+				A5467DDD25C8C38E0060055B /* BLEManager.swift */,
+				A526021525DB33B500A219D3 /* GlowData.swift */,
+				A5BDD7C225F6EFF700022822 /* GlowCharacteristicUUID.swift */,
+				A526020F25DB31B300A219D3 /* GlowPeripheralService.swift */,
+				A526026525EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift */,
+				A5467DD125C8C34E0060055B /* Assets.xcassets */,
+				A5467DD625C8C34E0060055B /* Info.plist */,
+				A526023C25E1D02C00A219D3 /* Intents.intentdefinition */,
+				A5467DD325C8C34E0060055B /* Preview Content */,
+			);
+			path = CasperGlowPro;
+			sourceTree = "<group>";
+		};
+		A5467DD325C8C34E0060055B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A5467DD425C8C34E0060055B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A526024425E1D21B00A219D3 /* Intent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A526025025E1D21B00A219D3 /* Build configuration list for PBXNativeTarget "Intent" */;
+			buildPhases = (
+				A526024125E1D21B00A219D3 /* Sources */,
+				A526024225E1D21B00A219D3 /* Frameworks */,
+				A526024325E1D21B00A219D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intent;
+			productName = Intent;
+			productReference = A526024525E1D21B00A219D3 /* Intent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A5467DC925C8C34D0060055B /* CasperGlowPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5467DD925C8C34E0060055B /* Build configuration list for PBXNativeTarget "CasperGlowPro" */;
+			buildPhases = (
+				A5467DC625C8C34D0060055B /* Sources */,
+				A5467DC725C8C34D0060055B /* Frameworks */,
+				A5467DC825C8C34D0060055B /* Resources */,
+				A526025325E1D21B00A219D3 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A526024E25E1D21B00A219D3 /* PBXTargetDependency */,
+			);
+			name = CasperGlowPro;
+			productName = CasperGlowPro;
+			productReference = A5467DCA25C8C34D0060055B /* CasperGlowPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5467DC225C8C34D0060055B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					A526024425E1D21B00A219D3 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5467DC925C8C34D0060055B = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = A5467DC525C8C34D0060055B /* Build configuration list for PBXProject "CasperGlowPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5467DC125C8C34D0060055B;
+			productRefGroup = A5467DCB25C8C34D0060055B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5467DC925C8C34D0060055B /* CasperGlowPro */,
+				A526024425E1D21B00A219D3 /* Intent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A526024325E1D21B00A219D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5467DC825C8C34D0060055B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5467DD525C8C34E0060055B /* Preview Assets.xcassets in Resources */,
+				A5467DD225C8C34E0060055B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A526024125E1D21B00A219D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A526025C25EAE51900A219D3 /* Intents.intentdefinition in Sources */,
+				A5BDD7C425F6EFF700022822 /* GlowCharacteristicUUID.swift in Sources */,
+				A526028025EAE95600A219D3 /* GlowError.swift in Sources */,
+				A526027825EAE92500A219D3 /* BLEManager.swift in Sources */,
+				A526026A25EAE6BF00A219D3 /* GlowCoordinator.swift in Sources */,
+				A526024B25E1D21B00A219D3 /* IntentHandler.swift in Sources */,
+				A526026F25EAE91700A219D3 /* GlowPeripheralService.swift in Sources */,
+				A526027525EAE92200A219D3 /* GlowData.swift in Sources */,
+				A5655F2F25F1A013004EBC87 /* GlowLogger.swift in Sources */,
+				A526027B25EAE92D00A219D3 /* GlowStore.swift in Sources */,
+				A526028525EB228E00A219D3 /* Data+Hex.swift in Sources */,
+				A526026225EAE56200A219D3 /* ToggleLightIntentHandler.swift in Sources */,
+				A526027225EAE91900A219D3 /* GlowPeripheralServiceDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5467DC625C8C34D0060055B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A526021025DB31B300A219D3 /* GlowPeripheralService.swift in Sources */,
+				A526022225DB7CF800A219D3 /* GlowStore.swift in Sources */,
+				A526022F25DB8E7000A219D3 /* Binding+OnChange.swift in Sources */,
+				A526023D25E1D02C00A219D3 /* Intents.intentdefinition in Sources */,
+				A526023225E0B74700A219D3 /* GlowError.swift in Sources */,
+				A526020A25DB1E4B00A219D3 /* DashboardView.swift in Sources */,
+				A5467DDE25C8C38E0060055B /* BLEManager.swift in Sources */,
+				A526021625DB33B500A219D3 /* GlowData.swift in Sources */,
+				A526021325DB31C800A219D3 /* Data+Hex.swift in Sources */,
+				A5655F2A25F19F28004EBC87 /* GlowLogger.swift in Sources */,
+				A5BDD7C325F6EFF700022822 /* GlowCharacteristicUUID.swift in Sources */,
+				A5467DCE25C8C34D0060055B /* CasperGlowProApp.swift in Sources */,
+				A526022B25DB8AE100A219D3 /* GlowCoordinator.swift in Sources */,
+				A526026625EAE61100A219D3 /* GlowPeripheralServiceDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A526024E25E1D21B00A219D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A526024425E1D21B00A219D3 /* Intent */;
+			targetProxy = A526024D25E1D21B00A219D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A526025125E1D21B00A219D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54886F5C54;
+				INFOPLIST_FILE = Intent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jeffreydeng.CasperGlowPro.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A526025225E1D21B00A219D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54886F5C54;
+				INFOPLIST_FILE = Intent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jeffreydeng.CasperGlowPro.Intent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5467DD725C8C34E0060055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5467DD825C8C34E0060055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5467DDA25C8C34E0060055B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CasperGlowPro/Preview Content\"";
+				DEVELOPMENT_TEAM = 54886F5C54;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CasperGlowPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jeffreydeng.CasperGlowPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5467DDB25C8C34E0060055B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CasperGlowPro/Preview Content\"";
+				DEVELOPMENT_TEAM = 54886F5C54;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CasperGlowPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jeffreydeng.CasperGlowPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A526025025E1D21B00A219D3 /* Build configuration list for PBXNativeTarget "Intent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A526025125E1D21B00A219D3 /* Debug */,
+				A526025225E1D21B00A219D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5467DC525C8C34D0060055B /* Build configuration list for PBXProject "CasperGlowPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5467DD725C8C34E0060055B /* Debug */,
+				A5467DD825C8C34E0060055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5467DD925C8C34E0060055B /* Build configuration list for PBXNativeTarget "CasperGlowPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5467DDA25C8C34E0060055B /* Debug */,
+				A5467DDB25C8C34E0060055B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5467DC225C8C34D0060055B /* Project object */;
+}
