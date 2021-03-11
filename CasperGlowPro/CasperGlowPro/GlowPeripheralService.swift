@@ -127,8 +127,10 @@ extension GlowPeripheralService: CBPeripheralDelegate {
                 fatalError("Glow returned unexpected response for connect and reconnect events")
             }
         case .connectAck:
-            glowStatus = .ready
-            delegate?.peripheralDidChangeToReady()
+            if glowStatus == .acknowledgedHandshake {
+                glowStatus = .ready
+                delegate?.peripheralDidChangeToReady()
+            }
         case .turnOnLight:
             delegate?.lightStatusDidChange(isLightOn: true)
         case .turnOffLight:
