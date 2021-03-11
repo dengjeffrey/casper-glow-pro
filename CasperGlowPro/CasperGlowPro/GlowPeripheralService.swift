@@ -107,20 +107,8 @@ extension GlowPeripheralService: CBPeripheralDelegate {
         if let error = error {
             GlowLogger.logError(error)
             return
-        }
-        
-        switch glowStatus {
-        case .waitingForHandshake:
+        } else if glowStatus == .waitingForHandshake {
             subscribeToReadyNotification()
-        case .sentTime:
-            writePing1()
-        case .pinged1:
-            writePing2()
-        case .pinged2:
-            glowStatus = .ready
-            delegate?.peripheralDidChangeToReady()
-        default:
-            return
         }
     }
     
@@ -139,7 +127,8 @@ extension GlowPeripheralService: CBPeripheralDelegate {
                 fatalError("Glow returned unexpected response for connect and reconnect events")
             }
         case .connectAck:
-            writeSendTime()
+            glowStatus = .ready
+            delegate?.peripheralDidChangeToReady()
         case .turnOnLight:
             delegate?.lightStatusDidChange(isLightOn: true)
         case .turnOffLight:
